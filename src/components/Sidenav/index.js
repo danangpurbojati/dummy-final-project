@@ -1,14 +1,27 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Layout } from 'antd';
+
+import './sidenavStyle.scss';
 
 const Sidenav = () => {
     return (
-        <div className="list-group">
-            <Link to="/beranda" className="list-group-item list-group-item-action">Beranda</Link>
-            <Link to="/book-antrian" className="list-group-item list-group-item-action">Book Nomor Antrian</Link>
-            <Link to="/daftar-bank" className="list-group-item list-group-item-action">Daftar Bank</Link>
-            <Link to="/" className="list-group-item list-group-item-action">Sign Out</Link>
-        </div>
+        <Layout.Sider className="sidenav">
+            <ul className="side-menu">
+                <li className="list-menu">
+                    <Link to="/beranda">Beranda</Link>
+                </li>
+                <li className="list-menu">
+                    <Link to="/book-antrian">Book Nomor Antrian</Link>
+                </li>
+                <li className="list-menu">
+                    <Link to="/daftar-bank">Daftar Bank & Info Antrian</Link>
+                </li>
+                <li className="list-menu">
+                    <Link to="/login">Sign Out</Link>
+                </li>
+            </ul>
+        </Layout.Sider>
     )
 }
 

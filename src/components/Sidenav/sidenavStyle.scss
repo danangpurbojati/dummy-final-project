@@ -1,0 +1,18 @@
+.sidenav{
+    padding: 16px;
+    height: 100vh;
+
+    .side-menu{
+        height: 100%;
+        list-style: none;
+
+        .list-menu{
+            margin-bottom: 16px;
+            
+            a{
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+}
